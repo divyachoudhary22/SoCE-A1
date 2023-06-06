@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+
+    <style>
+        body{
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            margin:0;
+        }
+
+        html{
+            box-sizing:border-box;
+        }
+
+        *,*:before,*:after{
+            box-sizing:inherit;
+        }
+
+        .column{
+            float:left;
+            width:50%;
+            margin-bottom:16px;
+            padding:0 8px;
+        }
+
+        .card{
+            box-shadow:0 4px 8px 0 rgba(0,0,0,0.2);
+            margin: 8px;
+        }
+
+        .about-section{
+            padding: 50px;
+            text-align:center;
+            background-color: rgb(243, 175, 28);
+            color: black;
+        }
+
+        .container{
+            padding: 0 16px;
+        }
+
+        .container::after, .row::after{
+            content:"";
+            clear: both;
+            display: table;
+        }
+
+        .title{
+            color:grey;
+        }
+
+        .button{
+            border:none;
+            outline:0;
+            display:inline-block;
+            padding: 8px;
+            color: black;
+            background-color: rgb(243, 175, 28);
+            text-align: center;
+            font-size:90%;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .button:hover{
+            background-color: #555;
+        }
+
+        @media screen and (max-width:650px)
+        {
+            .column{
+                width:100%;
+                display:block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="about-section">
+        <h1 href="#about">About Me</h1>
+        <p>As architects, we design spaces for people - 
+            <br>spaces that promote a sense of place.</p>
+    </div>
+
+    <h2 style="text-align:center"></h2>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <img src="architect_team/4.png" alt="John" style="width:100%">
+                <div class="container">
+                    <h2>John Doe</h2>
+                    <p class="title">Architect</p>
+                    <p>I turn dreams to reality.</p>
+                    <p>john@example.com</p>
+                    <p><button class="button">Contact</button></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            
+                <p>I am an architect. Architecture is the art and science of designing and building structures.<br><br>
+                I am trained and licensed in designing buildings, and I participate in supervising various constructions as to ensure that everything is in its correct place.I am important to the community because I design and help build homes,local shops,businesses and etc...<br><br>
+                Architecture is a business of which also involves, technical knowledge, management, and understanding of business, each as important as design.<br><br>
+                Before building, an architect mustplan, some architects build models from cardboard or plastic, others just draw a blueprint. Then the building blueprint is built after being sent through the council to be seen and approved of. The building is closely supervised by the architect during constructionas so the building is built according to plan.<br>
+                </p>
+            
+        </div>
+    </div>
+</body>
+</html>
